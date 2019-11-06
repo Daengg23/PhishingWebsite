@@ -1,0 +1,15 @@
+.blue-box{
+  background-color: blue;
+  width: 350px;
+  padding-top: 75px;
+  padding-bottom: 75px;
+  text-align: center;
+  font-size: 30px;
+  color: white;
+}
+
+#virus-link{
+  position: fixed;
+  top: 200px;
+  left: 500px;
+}
