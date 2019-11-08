@@ -12,5 +12,11 @@
   position: fixed;
   top: 200px;
   left: 500px;
-  
+}
+
+#email-box {
+  display: block;
+  margin: 0 auto;
+  height: 500px;
+  width: 500px;
 }
