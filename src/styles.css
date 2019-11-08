@@ -1,12 +1,13 @@
 .email {
     vertical-align: top;
     text-align:left;
-    padding-left:20px;
+    padding-left:10px;
 }
   
 .email-body {
-    padding-top: 10px;
-    padding-left: 40px;
+    padding: 47px;
+    padding-top:10px;
+    padding-bottom: 5px;
 }
 
 #profile {
@@ -15,4 +16,17 @@
 
 .email-box {
     padding: 5px;
+}
+
+.to-me{
+    color:#555;;
+    position: absolute;
+    left: 60px;
+    top: 100px;
+    
+    vertical-align: middle;
+}
+
+#virus-link:hover { 
+    color: rgb(146, 25, 25);
 }
