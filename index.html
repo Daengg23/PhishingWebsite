@@ -6,18 +6,20 @@
     <link rel="stylesheet" href="indexstyles.css">
   </head>
 
-  <div id="fake-page">
-    <h1 id="title">ATTENTION ATTENTION ATTENTION</h1>
-  </div>
+  <img id="pay-pal-logo" src= "https://seeklogo.net/wp-content/uploads/2015/11/paypal-logo-preview.png" alt="paypal logo">
+    <div id="login-box" onclick="youClicked()">
+        <div id="email-login-box" class="innerbox">Email or Mobile number</div>
+        <div id="password-login-box" class="innerbox">Password</div>
+        <div id="button-login-box" class="innerbox">Log In</div>
+    </div>
 
 
-  <div style="visibility: visible;" id="main-page">
+  <div style="display:hidden;" id="main-page">
     <div>
-  
       <iframe src="./src/iframe.html" id="email-box"></iframe>
     </div>
   </div>
   
   
-  
+  <script src="scripts.js" charset="utf-8"></script>
 </html>
