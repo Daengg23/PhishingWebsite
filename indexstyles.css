@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway|Ubuntu&display=swap');
+
 .blue-box{
   background-color: blue;
   width: 350px;
@@ -17,6 +19,7 @@
 #email-box {
   display: block;
   margin: 0 auto;
+  margin-top: 20px;
   height: 600px;
   width: 600px;
   border-style: solid;
@@ -54,9 +57,6 @@
     background-color: indigo;
   }
 }
-
-
-@import url('https://fonts.googleapis.com/css?family=Raleway|Ubuntu&display=swap');
 
 #login-box{
     border-width: 1px;
@@ -130,9 +130,9 @@
 
 .fade-away{
     visibility: hidden;
-    transition: visibility 0s 2s, opacity 2s linear;
+    transition: visibility 0s 7s, opacity 7s linear;
     animation-name: fade-out;
-    animation-duration: 1s;
+    animation-duration: 5s;
     animation-fill-mode: forwards;
 }
 
@@ -145,7 +145,48 @@
     }
     100% { 
         opacity: 0;
+        position: fixed;
+        left: 10000px; 
     }
+}
+
+#warning-message{
+  color: black;
+
+  font-family: Ubuntu;
+  font-size: 50px;
+
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+
+  position: relative;
+  top: 0px;
+  left: 18px;;
+}
+
+.appear-warning-message{
+  animation-name: appear;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+}
+
+.appear-main-page{
+  animation-name: appear;
+  animation-duration: 6s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes appear{
+  0%{
+    visibility: hidden;
+  }
+  90%{
+    visibility: hidden;
+  }
+  100%{
+    visibility: visible;
+  }
 }
 
 
