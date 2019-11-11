@@ -10,39 +10,17 @@ let badGrammar = true;
 const mistakes_found = document.getElementById("mistakes-found");
 const counter = document.getElementById("counter");
 
-function checkIfClicked(item){
-    console.log("clicked");
-    if(item == "fakeEmailAddress" && fakeEmailAddress == true){
-        fakeEmailAddress = false;
+function checkIfClicked(id){
+    
+    console.log("clicked mistake.");
+
+    
+    if (Array.from(document.getElementById(id).classList).includes("scam"))
         window.mistakes++;
-    }
-    if(item == "informalGreeting" && informalGreeting == true){
-        informalGreeting = false;
-        window.mistakes++;
-    }
-    if(item == "misSpelledName" && misSpelledName == true){
-        misSpelledName = false;
-        window.mistakes++;
-    }
-    if(item == "nonSense" && nonSense == true){
-        nonSense = false;
-        window.mistakes++;
-    }
-    if(item == "shortLink" && shortLink == true){
-        shortLink = false;
-        window.mistakes++;
-    }
-    if(item == "scareTactic" && scareTactic == true){
-        scareTactic = false;
-        window.mistakes++;
-    }
-    if(item == "badGrammar" && badGrammar == true){
-        badGrammar = false;
-        window.mistakes++;
-    }
-    document.getElementById(item).classList.add("turn-red");
-    mistakes_found.innerHTML = mistakes;
-    console.log(window.mistakes);
+    document.getElementById(id).classList.remove("scam");
+    document.getElementById(id).classList.add("turn-red");
+    mistakes_found.innerHTML = window.mistakes;
+    checkWin();
 }
 
 function checkWin(){
@@ -53,9 +31,5 @@ function checkWin(){
         counter.classList.add("turn-green");
     }
 }
-
-window.setInterval(function(){
-    checkWin();
-  }, 100);
 
 

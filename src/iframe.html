@@ -7,7 +7,7 @@
   <div>
     <div class="email-box">
         <div>
-          <h2 class="scam">We couldn't verify your recent transactions [Order ID #0010]</h2>
+          <h2 class="scam" id="badGrammar" onclick="checkIfClicked('badGrammar')">[WARNING]We couldn't verify your recent transactions [Order ID #0010]</h2>
           <img src="https://ssl.gstatic.com/ui/v1/icons/mail/profile_mask2.png" style="background-color: #cccccc" id="profile" />
           <span class="email">
               <span><b id="misSpelledName" class="scam" onclick="checkIfClicked('misSpelledName')">PayPaul</b></span>
@@ -22,7 +22,7 @@
           We couldn't verify your recent transaction
           <br>
           <br>
-          Dear Client,
+          <span id="informalGreeting" class="scam" onclick="checkIfClicked('informalGreeting')">Dear Friend,</span>
           <br><br>
           We just wanted to confirm that you've changed your password. If you didn't make this change,
           <br>please check information in here. It's import that you let us know because it helps us prevent
@@ -31,13 +31,12 @@
           <span class="scam">We've noticed some changes to your unsual selling activities and will need some more<br>information about your recent sales.</span>
           <br>
           <br>
-          <a target="_blank" href="www.scam.com" id="scam"><input type="button" class="scam" value="Verify Information Now" onclick="return false;"/></a>
+          <a target="_blank" href="www.scam.com" id="scam"><input type="button" class="button" value="Verify Information Now" onclick="return false;"/></a>
         </div>
-
     </div>
   </div>
 
-  <div id="counter">Mistakes Found: <span id="mistakes-found">0</span>/7</div>
+  <div id="counter">Mistakes Found: <span id="mistakes-found">0</span>/5</div>
 
   <script src="scripts.js" charset="utf-8"></script>
 </html> 

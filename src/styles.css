@@ -47,15 +47,20 @@
 
 #counter{
     position: fixed;
-    top: 350px;
-    left: 550px;
+    top: 450px;
+    left: 50%;
     color: red;
     background-color: lightgray;
     font-family: Ubuntu;
     font-size: 20px;
 }
 
-.scam:hover {
+a.disabled {
+    pointer-events: none;
+    cursor: default;
+  }
+
+.scam:hoer {
     color: rgb(224, 47, 47);
 }
 
@@ -67,7 +72,7 @@
     color: red;
 }
 
-input.scam {
+input.button {
     width: 400px;
     min-height: 44px;
     padding-top: 20x;
