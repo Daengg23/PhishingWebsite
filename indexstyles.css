@@ -10,18 +10,13 @@
   color: white;
 }
 
-#virus-link{
-  position: fixed;
-  top: 200px;
-  left: 500px;
-}
-
 #email-box {
   display: block;
   margin: 0 auto;
   margin-top: 50px;
-  height: 400px;
-  width: 800px;
+  height: 500px;
+  width: 860px;
+  background-color: white;
 }
 
 #title{
@@ -64,6 +59,14 @@
     animation-fill-mode: forwards;
 }
 
+.background {
+  background-image: linear-gradient(to right, rgb(0, 183, 255), rgb(23, 13, 160));
+}
+
+.hidden {
+  display: none;
+}
+
 @keyframes fade-out {
     0% { 
         opacity: 1;
@@ -79,18 +82,16 @@
     }
     100% { 
         opacity: 0;
-        position: fixed;
-        left: 10000px; 
+        display: none;
     }
 }
 
 #warning-message{
-  color: black;
+  color: white;
 
-  font-family: Ubuntu;
+  font-family: HelveticaNeue-Medium,"Helvetica Neue Medium",HelveticaNeue,"Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 50px;
 
-  display: block;
   margin: 0 auto;
   text-align: center;
 
@@ -100,20 +101,33 @@
 }
 
 .appear-main-page{
+  display: "block";
   animation-name: appear;
+  animation-delay: 2.5s;
   animation-duration: 2s;
-  animation-fill-mode: forwards;
+  animation-fill-mode: forwards;  
 }
 
 @keyframes appear{
   0%{
-    visibility: hidden;
+    visibility: visible;
+    opacity: 0.1;
   }
-  90%{
-    visibility: hidden;
+  25%{
+    visibility: visible;
+    opacity: 0.25;
+  }
+  50%{
+    visibility: visible;
+    opacity: 0.5;
+  }
+  75%{
+    visibility: visible;
+    opacity: 0.75;
   }
   100%{
     visibility: visible;
+    opacity: 1;
   }
 }
 
