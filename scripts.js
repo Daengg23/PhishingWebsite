@@ -1,19 +1,13 @@
 console.log("Scripts Loaded");
 
+const startup = document.getElementById("startup");
+const main = document.getElementById("main");
 
-const div_login_box = document.getElementById('login-box');
-const div_pay_pal_logo = document.getElementById('pay-pal-logo');
-const div_main_page = document.getElementById('main-page');
-const div_warning_message = document.getElementById('warning-message');
-
-function youClicked(){
+function fade() {
     console.log("clicked");
-    div_login_box.classList.add("shift-away");
-    div_pay_pal_logo.classList.add("fade-away");
-    div_warning_message.classList.add("appear-warning-message");
-    div_main_page.classList.add("appear-main-page");
+    startup.classList.add("fade-away");
+    main.classList.add("appear-main-page");
 }
 
 //sets these  to hidden on startup of page
-div_main_page.style.visibility = "hidden";
-div_warning_message.style.visibility = "hidden";
+main.style.visibility = "hidden";

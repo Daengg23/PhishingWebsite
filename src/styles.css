@@ -1,41 +1,42 @@
-.email {
-    vertical-align: top;
-    text-align:left;
-    padding-left:10px;
-    font-size: .75rem;
-    font-family: Roboto, 'Helvetica Neue', sans-serif;
-}
-  
-.email-body {
-    font-size: small;
-    letter-spacing: .3px;
-    line-height: 20px;
-    margin-top: 10px;
-    margin-left: 45px;
-    width: 700px;
-}
 
-#profile {
-    border-radius: 50%;
-}
+    .email {
+        vertical-align: top;
+        text-align:left;
+        padding-left:10px;
+        font-size: .75rem;
+        font-family: Roboto, 'Helvetica Neue', sans-serif;
+    }
+    
+    .email-body {
+        font-size: small;
+        letter-spacing: .3px;
+        line-height: 20px;
+        margin-top: 10px;
+        margin-left: 45px;
+        width: 700px;
+    }
 
-.email-box {
-    padding: 5px;
-}
+    #profile {
+        border-radius: 50%;
+    }
 
-.to-me{
-    color:#555;;
-    position: absolute;
-    left: 60px;
-    top: 140px;
-    font-size: .75rem;
-}
+    .email-box {
+        padding: 5px;
+    }
 
-#virus-link:hover { 
-    color: rgb(146, 25, 25);
-}
+    .to-me{
+        color:#555;;
+        position: absolute;
+        left: 60px;
+        top: 140px;
+        font-size: .75rem;
+    }
 
-.heading {
-    width: 400px;
-    margin-left: 45px
-}
+    #virus-link:hover { 
+        color: rgb(146, 25, 25);
+    }
+
+    .heading {
+        width: 400px;
+        margin-left: 45px
+    }

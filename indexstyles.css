@@ -21,7 +21,7 @@
   margin: 0 auto;
   margin-top: 20px;
   height: 600px;
-  width: 600px;
+  width: 800px;
 }
 
 #title{
@@ -55,81 +55,12 @@
   }
 }
 
-#login-box{
-    border-width: 1px;
-    border-color: lightgray;
-    border-radius: 8px;
-    border-style: solid;
-
-    display: block;
-    margin: auto;
-
-    background-color: white;
-    padding: 20px;
-    width: 600px;
-    height: 300px;
-}
-
-#pay-pal-logo{
-    width: 300px;
-    display: block;
-    margin: auto;
-}
-
-.innerbox{
-    height: 15%;
-    margin-top: 1%;
-    margin-bottom: 3%;
-    padding-top: 4%;
-    padding-bottom: 2%;
-    padding-left: 2%;
-
-    border-style: solid;
-    border-color: darkgray;
-    border-radius: 10px;
-    border-width: 2px;
-
-    font-family: Ubuntu;
-    font-size: 160%;
-    color: rgb(148, 142, 142);
-}
-
-#button-login-box{
-    border-style: solid;
-    border-color: #26428b;
-    border-radius: 10px;
-    border-width: 2px;
-
-    background-color: #26428b;
-
-    color: white;
-
-    text-align: center;
-}
-
-.shift-away{
-    position: fixed;
-    left: 400px;
-    animation-name: shifting;
-    animation-duration: 5s;
-    animation-fill-mode: forwards;
-}
-
-@keyframes shifting{
-    50%{
-        left: 1700px;
-    }
-    100%{
-        left: 3500px;
-        visibility: hidden;
-    }
-}
 
 .fade-away{
     visibility: hidden;
     transition: visibility 0s 7s, opacity 7s linear;
     animation-name: fade-out;
-    animation-duration: 5s;
+    animation-duration: 2s;
     animation-fill-mode: forwards;
 }
 
@@ -137,8 +68,14 @@
     0% { 
         opacity: 1;
     }
-    99% { 
-        opacity: 0.01;
+    25% { 
+        opacity: 0.75;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    75% {
+        opacity: 0.25;
     }
     100% { 
         opacity: 0;
@@ -162,15 +99,9 @@
   left: 18px;;
 }
 
-.appear-warning-message{
-  animation-name: appear;
-  animation-duration: 4s;
-  animation-fill-mode: forwards;
-}
-
 .appear-main-page{
   animation-name: appear;
-  animation-duration: 6s;
+  animation-duration: 2s;
   animation-fill-mode: forwards;
 }
 

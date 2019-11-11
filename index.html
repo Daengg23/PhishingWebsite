@@ -4,26 +4,40 @@
     <meta charset="utf-8">
     <title>Phishing Website</title>
     <link rel="stylesheet" href="indexstyles.css">
+    <link rel="stylesheet" href="./src/start.css">
   </head>
-
-  <img id="pay-pal-logo" src= "https://seeklogo.net/wp-content/uploads/2015/11/paypal-logo-preview.png" alt="paypal logo">
-  <div id="login-box" onclick="youClicked()">
-      <div id="email-login-box" class="innerbox">Email or Mobile number</div>
-      <div id="password-login-box" class="innerbox">Password</div>
-      <div id="button-login-box" class="innerbox">Log In</div>
-  </div>
-
-  <div id="warning-message">Don't Fall For These Obvious Phishing Scams.
-    <div>Here are some tips on how to spot some</div>
-  </div>
-
-
-  <div id="main-page">
-    <div>
-      <iframe src="./src/iframe.html" id="email-box"></iframe>
+  <div id="startup">
+    <div id="start">
+        <p id="logo"></p>
+        <form>
+                <input id="email" class="innerbox" placeholder="Email or mobile number"></input>
+                <input id="password" type="password" class="innerbox" placeholder="Password"></input>
+                <input type="button" id="login" class="innerbox" onclick="fade()" value="Log In" />
+        </form>
     </div>
+    <footer>
+            <div class="footer">
+                    <ul>
+                        <li>
+                            <a target="_blank" href="startup.html">Phishing Website</a>
+                            <span> | </span>
+                            <a target="_blank">Presentation</a>
+                        </li>
+                    </ul>
+            </div>
+    </footer>
   </div>
-  
-  
+  <div id="main">
+      <div id="warning-message">Don't Fall For These Obvious Phishing Scams.
+          <div>Here are some tips on how to spot some</div>
+        </div>
+      
+      
+        <div id="main-page">
+          <div>
+            <iframe src="./src/iframe.html" id="email-box"></iframe>
+          </div>
+        </div>
+  </div>
   <script src="scripts.js" charset="utf-8"></script>
 </html>

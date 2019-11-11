@@ -1,0 +1,147 @@
+#start {
+    margin: 120px auto 0;
+    border: 1px solid #eaeced;
+    border-radius: 5px;
+    overflow: hidden;
+    box-sizing: border-box;
+
+    padding: 42px;
+    padding-bottom: 36px;
+
+    position: relative;
+    width: 374px;
+    height: 358px
+}
+
+#logo {
+    margin: 0 auto 20px;
+    text-indent: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    color: #2c2e2f;
+
+    background: transparent url(https://www.paypalobjects.com/images/shared/paypal-logo-129x32.svg) top center no-repeat;
+    background-size: auto 28px;
+
+    width: 129px;
+    height: 32px;
+}
+
+form {
+    display: block;
+    margin-top: 0em;
+
+    position: relative;
+}
+
+#email, #password {
+    font-size: 93.75%;
+    color: #2c2e2f;
+    font-family: HelveticaNeue,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+div.start {
+    display: block;
+}
+
+#email {
+    margin-bottom: 20px;
+    position: relative;
+    margin: 0 0 10px;
+    padding: 0 10px;
+
+    box-sizing: border-box;
+    background-clip: padding-box;
+    transition: border .2s ease-in-out,background-color .2s ease-in-out;
+
+    height: 44px;
+    width: 100%;
+    border: 1px solid #9da3a6;
+    border-radius: 4px;
+
+    font-weight: 400;
+    direction: ltr;
+}
+
+#password {
+    margin-bottom: 20px;
+    position: relative;
+    margin: 0 0 10px;
+    padding: 0 10px;
+
+    box-sizing: border-box;
+    background-clip: padding-box;
+    transition: border .2s ease-in-out,background-color .2s ease-in-out;
+
+    height: 44px;
+    width: 100%;
+    border: 1px solid #9da3a6;
+    border-radius: 4px;
+
+    font-weight: 400;
+    direction: ltr;
+}
+
+#login {
+    width: 100%;
+    min-height: 44px;
+    padding: 0;
+    border: 0;
+    display: block;
+    background-color: #0070ba;
+
+    box-sizing: border-box;
+    cursor: pointer;
+    border-radius: 4px;
+
+    color: #fff;
+    font-size: 1em;
+    text-align: center;
+    font-weight: 700;
+    font-family: HelveticaNeue-Medium,"Helvetica Neue Medium",HelveticaNeue,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-size: 11px;
+    padding-top: 14px;
+
+    display: block;
+    color: #2c2e2f;
+    font-family: HelveticaNeue,"Helvetica Neue",Helvetica,Arial,sans-serif;
+
+}
+
+li {
+    list-style-type: none;
+}
+
+ul {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+div.footer {
+    text-align:center;
+    padding: 14px;
+    background-color: #F7F9FA;
+}
+
+a {
+    cursor: pointer;
+    color: #666;
+    white-space: nowrap;
+    font-weight: 400;
+    text-decoration: none;
+
+    box-sizing: border-box;
+}
