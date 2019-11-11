@@ -11,6 +11,7 @@ const mistakes_found = document.getElementById("mistakes-found");
 const counter = document.getElementById("counter");
 
 function checkIfClicked(item){
+    
     console.log("clicked");
     if(item == "fakeEmailAddress" && fakeEmailAddress == true){
         fakeEmailAddress = false;
@@ -43,6 +44,7 @@ function checkIfClicked(item){
     document.getElementById(item).classList.add("turn-red");
     mistakes_found.innerHTML = mistakes;
     console.log(window.mistakes);
+    checkWin();
 }
 
 function checkWin(){
@@ -53,9 +55,5 @@ function checkWin(){
         counter.classList.add("turn-green");
     }
 }
-
-window.setInterval(function(){
-    checkWin();
-  }, 100);
 
 
