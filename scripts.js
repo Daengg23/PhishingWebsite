@@ -9,5 +9,6 @@ function fade() {
     main.classList.add("appear-main-page");
 }
 
+
 //sets these  to hidden on startup of page
 main.style.visibility = "hidden";

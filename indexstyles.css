@@ -19,8 +19,8 @@
 #email-box {
   display: block;
   margin: 0 auto;
-  margin-top: 20px;
-  height: 600px;
+  margin-top: 50px;
+  height: 400px;
   width: 800px;
 }
 
@@ -116,6 +116,16 @@
     visibility: visible;
   }
 }
+
+#counter{
+  position: absolute;
+  left: 40px;
+  top: 600px;
+
+  font-family: Ubuntu;
+  font-size: 30px;
+}
+
 
 
 

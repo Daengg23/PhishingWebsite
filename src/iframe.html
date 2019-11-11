@@ -7,19 +7,35 @@
   <div>
     <div class="email-box">
         <div>
-          <h2 class="heading">[GitHub] Please verify your device</h2>
+          <h2 class="heading phishy-link" id="scareTactic" onclick="checkIfClicked('scareTactic')">[VERIFICATION ERROR] ACCOUNT WILL BE DISABLED</h2>
           <img src="https://ssl.gstatic.com/ui/v1/icons/mail/profile_mask2.png" style="background-color: #cccccc" id="profile" />
           <span class="email">
-              <span><b>GitHub</b></span>
-              <span aria-hidden="true" style="color: #555;">&lt;noreply@github.com&gt;</span>
+              <span><b id="misSpelledName" class="phishy-link" onclick="checkIfClicked('misSpelledName')">PayPaul</b></span>
+              <span aria-hidden="true" class="phishy-link" id="fakeEmailAddress" onclick="checkIfClicked('fakeEmailAddress')">&lt;paypalsoupservices@paypal.com&gt;</span>
           </span>
           <span class="to-me">to me</span>
-      </div>
-        <div class="email-body">
-              Lorem <span id="virus-link">www.reddit.com</span>ipsum dolor sit amet, consectetur adipiscing elit. Donec tempor dolor sit amet metus condimentum hendrerit. Duis a odio id tellus cursus mollis at non mi. Curabitur a risus non sem molestie accumsan rhoncus sed nisl. Nunc aliquam commodo gravida. Nam at eros vel tellus iaculis suscipit. Nulla vehicula semper risus eu tincidunt. Nullam sagittis scelerisque efficitur. Nunc eget dapibus mi. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque iaculis sem a convallis ornare. Quisque finibus fringilla erat, vitae sodales sem scelerisque ut. Praesent suscipit, nisl bibendum aliquet dapibus, dolor augue accumsan orci, non tincidunt ex augue ut magna.
-          <br>
-  Proin lacus eros, imperdiet at volutpat eget, convallis ut ex. Etiam a orci at lectus fringilla maximus a eu ipsum. Maecenas erat odio, dignissim vitae fermentum nec, varius in turpis. Etiam ultricies tempus diam a lobortis. Quisque imperdiet facilisis pharetra. Vestibulum hendrerit est quis tellus sodales, ut consequat quam lacinia. In ante est, porta non molestie sed, convallis ac mauris.       
         </div>
+
+        <div class="email-body">
+          <img src="https://www.paypalobjects.com/images/shared/paypal-logo-129x32.svg">
+          <br>
+          <span id="informalGreeting" class="phishy-link" onclick="checkIfClicked('informalGreeting')">Hello Freind,</span>
+          <br>
+          <span id="badGrammar" class="phishy-link" onclick="checkIfClicked('badGrammar')">We have troubles with your paypal account and we have need to confirm your're are identity. You maybe faced with limited account abilities and as a result, your're account may disabled with in 24 hours. Please tap link beelow to vairify within 24 hours.</span>
+          <br><br>
+          <span id="shortLink" class="phishy-link" onclick="checkIfClicked('shortLink')">www.thisistotallypaypal.com</span>
+          <br><br>
+          Sincerly,
+          <br>
+          Your Friends at PayPal
+          <br><br>
+              <span id="nonSense" class="phishy-link" onclick="checkIfClicked('nonSense')">PAYPAL WARNING! ACCOUNT ACCOUNT ACCOUNT</span>
+        </div>
+
     </div>
   </div>
+
+  <div id="counter">Mistakes Found: <span id="mistakes-found">0</span>/7</div>
+
+  <script src="scripts2.js" charset="utf-8"></script>
 </html> 

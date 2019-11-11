@@ -1,42 +1,68 @@
 
-    .email {
-        vertical-align: top;
-        text-align:left;
-        padding-left:10px;
-        font-size: .75rem;
-        font-family: Roboto, 'Helvetica Neue', sans-serif;
-    }
-    
-    .email-body {
-        font-size: small;
-        letter-spacing: .3px;
-        line-height: 20px;
-        margin-top: 10px;
-        margin-left: 45px;
-        width: 700px;
-    }
+@import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway|Ubuntu&display=swap');
 
-    #profile {
-        border-radius: 50%;
-    }
+.email {
+    vertical-align: top;
+    text-align:left;
+    padding-left:10px;
+    font-size: .75rem;
+    font-family: Roboto, 'Helvetica Neue', sans-serif;
+}
 
-    .email-box {
-        padding: 5px;
-    }
+.email-body {
+    font-size: small;
+    font-family: Nunito;
+    letter-spacing: .3px;
+    line-height: 20px;
+    margin-top: 10px;
+    margin-left: 45px;
+    width: 700px;
+}
 
-    .to-me{
-        color:#555;;
-        position: absolute;
-        left: 60px;
-        top: 140px;
-        font-size: .75rem;
-    }
+#profile {
+    border-radius: 50%;
+}
 
-    #virus-link:hover { 
-        color: rgb(146, 25, 25);
-    }
+.email-box {
+    padding: 5px;
+}
 
-    .heading {
-        width: 400px;
-        margin-left: 45px
-    }
+.to-me{
+    color:#555;;
+    position: absolute;
+    left: 60px;
+    top: 100px;
+    font-size: .75rem;
+}
+
+.phishy-link:hover { 
+    color: rgb(255, 0, 0);
+}
+
+.heading {
+    width: 800px;
+    margin-left: 45px
+}
+
+#nonSense{
+    font-size: 30px;
+}
+
+#counter{
+    position: fixed;
+    top: 350px;
+    left: 550px;
+    color: red;
+    background-color: lightgray;
+    font-family: Ubuntu;
+    font-size: 20px;
+}
+
+.turn-green{
+    color: green !important;
+}
+
+.turn-red{
+    color: red;
+}
