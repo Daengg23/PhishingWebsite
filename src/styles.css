@@ -67,7 +67,7 @@
     color: red;
 }
 
-input.scam {
+input.button {
     width: 400px;
     min-height: 44px;
     padding: 0;
@@ -86,3 +86,8 @@ input.scam {
     font-weight: 700;
     font-family: HelveticaNeue-Medium,"Helvetica Neue Medium",HelveticaNeue,"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
+
+.disabled {
+    pointer-events: none;
+    cursor: default;
+  }
