@@ -5,38 +5,39 @@
     <link rel="stylesheet" href="styles.css">
   </head>
   <div>
+    <div class="header">
+        <div id="counter">Mistakes Found: <span id="mistakes-found">0</span>/6</div>
+    </div>
     <div class="email-box">
         <div>
-          <h2 class="scam" id="badGrammar" onclick="checkIfClicked('badGrammar')">[WARNING]We couldn't verify your recent transactions [Order ID #0010]</h2>
+          <h2 class="scam" id="header" onclick="check('h2#header')">[WARNING]We couldn't verify your recent transactions [Order ID #0010]</h2>
           <img src="https://ssl.gstatic.com/ui/v1/icons/mail/profile_mask2.png" style="background-color: #cccccc" id="profile" />
           <span class="email">
-              <span><b id="misSpelledName" class="scam" onclick="checkIfClicked('misSpelledName')">PayPaul</b></span>
-              <span aria-hidden="true" class="scam" id="fakeEmailAddress" onclick="checkIfClicked('fakeEmailAddress')">&lt;paypalsoupservices@paypal.com&gt;</span>
+              <span class="scam" id="name" onclick="check('span#name')"><b>PayPaul</b></span>
+              <span aria-hidden="true" class="scam" id="email" onclick="check('span#email')">&lt;paypalsoupservices@paypal.com&gt;</span>
+              <span id="to-me">to me</span>
           </span>
-          <span class="to-me"><br>to me</span>
+          <span 
         </div>
 
-        <div class="email-body">
+        <div id="email-body">
           <img src="https://www.paypalobjects.com/images/shared/paypal-logo-129x32.svg">
           <br>
           We couldn't verify your recent transaction
           <br>
           <br>
-          <span id="informalGreeting" class="scam" onclick="checkIfClicked('informalGreeting')">Dear Friend,</span>
+          <span class="scam" id="greeting" onclick="check('span#greeting')">Dear Friend,</span>
           <br><br>
           We just wanted to confirm that you've changed your password. If you didn't make this change,
           <br>please check information in here. It's import that you let us know because it helps us prevent
-          unauthorised persons from accessing the <span><a target="_blank" href="www.scam.website" class="scam" onclick="return false;">PayPal</a> network and your account information.</span>
+          unauthorised persons from accessing the <span class="scam" id="fake-link" onclick="check('span#fake-link')"><a target="_blank" href="www.scam.website" onclick="return false;">PayPal</a></span><span> network and your account information.</span>
           <br><br>
           <span class="scam">We've noticed some changes to your unsual selling activities and will need some more<br>information about your recent sales.</span>
           <br>
           <br>
-          <a target="_blank" href="www.scam.com" id="scam"><input type="button" class="button" value="Verify Information Now" onclick="return false;"/></a>
+          <a target="_blank" class="scam" href="www.scam.com" id="button" onclick="check('a#button')"><input type="button" value="Verify Information Now" onclick="return false;"/></a>
         </div>
     </div>
   </div>
-
-  <div id="counter">Mistakes Found: <span id="mistakes-found">0</span>/5</div>
-
   <script src="scripts.js" charset="utf-8"></script>
 </html> 

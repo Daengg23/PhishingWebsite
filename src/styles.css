@@ -8,9 +8,10 @@
     padding-left:10px;
     font-size: .75rem;
     font-family: Roboto, 'Helvetica Neue', sans-serif;
+    display: inline;
 }
 
-.email-body {
+#email-body {
     font-size: small;
     font-family: Nunito;
     letter-spacing: .3px;
@@ -28,40 +29,22 @@
     padding: 5px;
 }
 
-.to-me{
+#to-me{
     color:#555;;
-    position: absolute;
-    left: 60px;
-    top: 85px;
     font-size: .75rem;
-}
-
-.heading {
-    width: 800px;
-    margin-left: 45px
-}
-
-#nonSense{
-    font-size: 30px;
+    vertical-align: bottom;
 }
 
 #counter{
-    position: fixed;
-    top: 450px;
-    left: 50%;
-    color: red;
-    background-color: lightgray;
-    font-family: Ubuntu;
+    color: rgb(55, 238, 55);
+    background-color: white;
+    font-family: oboto, 'Helvetica Neue', sans-serif;
     font-size: 20px;
 }
 
 a.disabled {
     pointer-events: none;
     cursor: default;
-  }
-
-.scam:hoer {
-    color: rgb(224, 47, 47);
 }
 
 .turn-green{
@@ -72,7 +55,7 @@ a.disabled {
     color: red;
 }
 
-input.button {
+input {
     width: 400px;
     min-height: 44px;
     padding-top: 20x;
@@ -95,3 +78,13 @@ input.button {
 a#scam {
     text-decoration: none;
 }
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    height: 25px;
+    border: none;
+
+    margin: 0 16px 0 0!important;
+    padding: 0 16px 0 16px;
+  }

@@ -10,25 +10,24 @@ let badGrammar = true;
 const mistakes_found = document.getElementById("mistakes-found");
 const counter = document.getElementById("counter");
 
-function checkIfClicked(id){
+function check(q){
     
-    console.log("clicked mistake.");
+    if (Array.from(document.querySelector(q).classList).includes("scam")) {
 
+        document.querySelector(q).classList.remove("scam");
+        document.querySelector(q).classList.add("turn-red");
+        mistakes_found.innerHTML = ++window.mistakes;
+
+        checkWin();
+    }  
     
-    if (Array.from(document.getElementById(id).classList).includes("scam"))
-        window.mistakes++;
-    document.getElementById(id).classList.remove("scam");
-    document.getElementById(id).classList.add("turn-red");
-    mistakes_found.innerHTML = window.mistakes;
-    checkWin();
 }
 
 function checkWin(){
-    if(mistakes == 7){
+    if(mistakes == 6){
         console.log("WINNNER");
         counter.innerHTML = "You Found Them All!";
         mistakes_found.innerHTML = "";
-        counter.classList.add("turn-green");
     }
 }
 
