@@ -32,7 +32,10 @@
 #to-me{
     color:#555;;
     font-size: .75rem;
+    position: absolute;
     vertical-align: bottom;
+    top: 120px;
+    left: 60px;
 }
 
 #counter{
@@ -40,6 +43,8 @@
     background-color: white;
     font-family: oboto, 'Helvetica Neue', sans-serif;
     font-size: 20px;
+    padding-left: 35px;
+    padding-top: 10px;
 }
 
 a.disabled {
@@ -53,12 +58,12 @@ a.disabled {
 
 .turn-red{
     color: red;
+    text-decoration: none;
 }
 
 input {
     width: 400px;
-    min-height: 44px;
-    padding-top: 20x;
+    min-height: 44px;   
     border: 0;
     margin: 0 auto;
     display: block;
@@ -68,15 +73,17 @@ input {
     cursor: pointer;
     border-radius: 4px;
 
-    color: #fff;
+    color: inherit;
     font-size: 1em;
     text-align: center;
     font-weight: 700;
     font-family: HelveticaNeue-Medium,"Helvetica Neue Medium",HelveticaNeue,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-decoration: none;
 }
 
-a#scam {
+a.scam {
     text-decoration: none;
+    color: white;
 }
 
 .header {
@@ -87,4 +94,19 @@ a#scam {
 
     margin: 0 16px 0 0!important;
     padding: 0 16px 0 16px;
+    
+  }
+
+
+  a#link {
+      text-decoration-style: dotted;
+      color: inherit;
+  }
+
+  h2#header {
+      padding-left: 45px;
+  }
+
+  span#fake-link.spam {
+      color: blue;
   }
