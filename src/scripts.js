@@ -24,7 +24,7 @@ function check(q){
 }
 
 function checkWin(){
-    if(mistakes == 6){
+    if(mistakes == 8){
         console.log("WINNNER");
         counter.innerHTML = "You Found Them All!";
         mistakes_found.innerHTML = "";
